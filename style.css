@@ -1,0 +1,103 @@
+/* Reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-container{
+    background-color: #f08e35;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.header-container span{
+    color: rgb(216, 58, 58);
+}
+
+li{
+    width: 200px;
+    list-style: none;
+    background-color: rgb(225, 224, 224);
+    border: 2px solid rgba(50, 49, 49, 0.722);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.boards-container{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+}
+
+.boards-container .result-msg{
+    display: flex;
+    width: 400px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    background-color:#f08e35;
+    border: 2px solid rgba(50, 49, 49, 0.722);
+    border-radius: 4px;
+    padding: 30px;
+
+}
+
+.boards-container .result-msg #correct-msg,
+.boards-container .result-msg #wrong-msg{
+    display: none;
+}
+
+.boards-container .result-msg span{
+    background-color: green;
+    padding: 5px;
+    border: 2px solid rgba(50, 49, 49, 0.722);
+    border-radius: 5px;
+}
+
+.boards-container .result-msg span:hover{
+    cursor: pointer;
+}
+.boards-container .result-msg span:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.boards-container .option-container{
+    width: 100vw;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.boards-container .option-container,
+.boards-container .solution-container{
+    height: 30%;
+}
+
+.boards-container .option-container ul,
+.solution-container ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.boards-container .option-container ul li,
+.solution-container ul li{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.boards-container .option-container ul li:hover{
+    background-color: #f08e35;
+}
